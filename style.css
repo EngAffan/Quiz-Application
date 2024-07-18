@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+.quiz-container {
+    color: white;
+    border-radius: 30px;
+    background: #554949;
+    padding: 20px;
+    box-shadow: 4px 4px 6px #000000, -4px -4px 6px white;
+    max-width: 35%;
+    text-align: center;
+}
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+.options li {
+    margin-bottom: 10px;
+}
+.options button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #f4f4f4;
+    cursor: pointer;
+}
+.options button:hover {
+    background: #ddd;
+}
+
+.options button.correct {
+    background: #4CAF50;
+    color: white;
+}
+.options button.wrong {
+    background: #f44336;
+    color: white;
+}
+
+.result {
+    display: none;
+    margin-top: 10px;
+}
+.score {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.welcome {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.start-button, .btn {
+    --color: 255, 255, 255;
+
+    border-radius: .5em;
+    transition: .3s;
+    background-color: rgba(var(--color), .2);
+    color: rgb(var(--color));
+    fill: rgb(var(--color));
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid rgb(var(--color));
+    box-shadow: 0 0 10px rgba(var(--color), .4);
+    outline: none;
+    padding: .5em 1em;
+}
+
+.start-button:hover, .btn:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.start-button span, .btn span {
+    transform: scale(.8);
+    transition: .3s;
+}
+
+.start-button:hover span, .btn:hover span {
+    transform: scale(1);
+}
+
+
+.start-button:active, .btn:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+.retry {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+#retryButton {
+    --color: 255, 255, 255;
+    border-radius: .5em;
+    transition: .3s;
+    background-color: rgba(var(--color), .2);
+    color: rgb(var(--color));
+    fill: rgb(var(--color));
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid rgb(var(--color));
+    box-shadow: 0 0 10px rgba(var(--color), .4);
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+}
+
+#retryButton:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+#retryButton span {
+    transform: scale(.8);
+    transition: .3s;
+}
+
+#retryButton:hover span {
+    transform: scale(1);
+}
+
+#retryButton:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+}
